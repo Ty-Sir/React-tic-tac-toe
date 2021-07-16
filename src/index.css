@@ -1,13 +1,122 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px sans-serif;
+  margin: 20px;
+  background: linear-gradient(90deg, rgba(63,94,251,.5) 0%, rgba(252,70,107,.5) 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 0 0 30px 30px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.react{
+  background: -webkit-linear-gradient(260deg, rgba(0,222,249,1) 0%, rgba(63,94,251,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  margin-left: 20px;
+  max-height: 320px;
+  overflow-y: scroll;
+  padding: 10px !important;
+  list-style: none;
+  text-align:center;
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.moves{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.moveBtn{
+  font-weight: 700 !important;
+  background-color: #ffe200 !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.moveBtn:hover{
+  background-color: #e6cc00 !important;
+}
+
+li{
+  margin-bottom: 5px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #fff;
+  float: left;
+  font-size: 4rem;
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:active {
+  transform: scale(.95);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.status{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+}
+
+.restartBtn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+
+.restartBtn:hover{
+  transform: scale(1.15);
 }
