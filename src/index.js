@@ -45,7 +45,7 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="col-12">
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -136,7 +136,6 @@ class Game extends React.Component {
         <Header />
         <div className="status">{status}</div>
         <div className="game">
-        <div><Restart /></div>
           <div className="game-info">
             <div className="game-board">
               <Board
@@ -147,6 +146,7 @@ class Game extends React.Component {
           </div>
           <ul className="moves">{moves}</ul>
         </div>
+        <Restart />
       </>
     );
   }

@@ -1,6 +1,5 @@
 body {
   font: 14px sans-serif;
-  margin: 20px;
   background: linear-gradient(90deg, rgba(63,94,251,.5) 0%, rgba(252,70,107,.5) 100%);
 }
 
@@ -95,10 +94,6 @@ li{
   justify-content: center;
 }
 
-.game-info {
-  margin-left: 20px;
-}
-
 .status{
   display: flex;
   justify-content: center;
@@ -119,4 +114,25 @@ li{
 
 .restartBtn:hover{
   transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .moves{
+    display: none;
+  }
+
+  .header{
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .status{
+    font-size: 1.5rem;
+  }
+
+  .square {
+    font-size: 2rem;
+    width: 75px;
+    height: 75px;
+  }
 }
